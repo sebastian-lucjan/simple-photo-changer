@@ -8,9 +8,32 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Photo splider</title>
   </head>
   <body>
-    <main class="app"></main>
+    <main class="app">
+      <div class="slider">
+        <div class="slider__images">
+          <div class="slider__image-container slider__image-container--first">
+            <img src="/assets/image1.jpg" draggable="false" alt="" />
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="slider__image-container slider__image-container--second">
+            <img src="/assets/image2.jpg" draggable="false" alt="" />
+          </div>
+          <div class="slider__divider">
+            <div class="slider__handle">
+              <span class="fa fa-chevron-left"></span>
+              <span class="fa fa-chevron-right"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
