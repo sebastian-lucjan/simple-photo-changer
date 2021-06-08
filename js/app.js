@@ -32,6 +32,21 @@ function init() {
         move(event.clientX);
       }
     });
+
+    handleElement.addEventListener('touchstart', () => {
+      dragging = true;
+    });
+    window.addEventListener('touchend', () => {
+      if (dragging) {
+        dragging = false;
+      }
+    });
+    window.addEventListener('touchmove', (event) => {
+      console.log(dragging);
+      if (dragging) {
+        move(event.touches[0].clientX);
+      }
+    });
   }
 
   function move(clientX) {
